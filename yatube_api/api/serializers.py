@@ -1,6 +1,8 @@
 from django.forms import ValidationError
-from rest_framework.serializers import (ModelSerializer, SlugRelatedField,
-                                        PrimaryKeyRelatedField, CurrentUserDefault)
+from rest_framework.serializers import (CurrentUserDefault,
+                                        ModelSerializer,
+                                        PrimaryKeyRelatedField,
+                                        SlugRelatedField)
 
 from rest_framework.validators import UniqueTogetherValidator
 
