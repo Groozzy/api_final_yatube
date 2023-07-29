@@ -44,7 +44,6 @@ class FollowViewSet(ListModelMixin, CreateModelMixin, GenericViewSet):
 class GroupViewSet(ReadOnlyModelViewSet):
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
-    # permission_classes = (IsAdminOrReadOnly,)
 
 
 class PostViewSet(ModelViewSet):
